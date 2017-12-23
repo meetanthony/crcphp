@@ -1,14 +1,11 @@
 <?php
 
 class CrcResult {
-
     public $Name = '';
     public $Crc = 0;
-
 }
 
 class CrcParams {
-
     public $Name;
     public $Array;
     public $Init;
@@ -17,5 +14,5 @@ class CrcParams {
     public $Poly;
     public $RefIn;
     public $Check;
-
+    public $InvertedInit;
 }
