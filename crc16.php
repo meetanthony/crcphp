@@ -5,12 +5,9 @@ include_once 'crcstructs.php';
 class Crc16 {
 
     public function ComputeCrc($crcParams, $data) {
-        if ($crcParams->RefIn)
-        {
+        if ($crcParams->RefIn) {
             $crc = $crcParams->InvertedInit;
-        }
-        else
-        {
+        } else {
             $crc = $crcParams->Init;
         }
         if ($crcParams->RefOut) {
@@ -30,6 +27,7 @@ class Crc16 {
 
         return $result;
     }
+
 }
 
 include_once './crc16/crc_16_ccitt_false.php';
@@ -82,5 +80,3 @@ $crcList = array(
     $CRC_16_X_25_,
     $CRC_16_XMODEM_,
 );
-
-$remark = "CRC-16/RIELLO CRC-16/TMS37157 CRC-A comming soon.";

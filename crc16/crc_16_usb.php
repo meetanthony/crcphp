@@ -1,6 +1,7 @@
 <?php
 $CRC_16_USB_ = new CrcParams();
 $CRC_16_USB_->Init = 0xFFFF;
+$CRC_16_USB_->InvertedInit = 0xFFFF;
 $CRC_16_USB_->Name = "CRC-16/USB";
 $CRC_16_USB_->XorOut = 0xFFFF;
 $CRC_16_USB_->RefOut = TRUE;

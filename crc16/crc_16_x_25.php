@@ -1,6 +1,7 @@
 <?php
 $CRC_16_X_25_ = new CrcParams();
 $CRC_16_X_25_->Init = 0xFFFF;
+$CRC_16_X_25_->InvertedInit = 0xFFFF;
 $CRC_16_X_25_->Name = "CRC-16/X-25";
 $CRC_16_X_25_->XorOut = 0xFFFF;
 $CRC_16_X_25_->RefOut = TRUE;

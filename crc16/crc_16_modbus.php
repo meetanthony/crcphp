@@ -1,6 +1,7 @@
 <?php
 $CRC_16_MODBUS_ = new CrcParams();
 $CRC_16_MODBUS_->Init = 0xFFFF;
+$CRC_16_MODBUS_->InvertedInit = 0xFFFF;
 $CRC_16_MODBUS_->Name = "CRC-16/MODBUS";
 $CRC_16_MODBUS_->XorOut = 0x0;
 $CRC_16_MODBUS_->RefOut = TRUE;
